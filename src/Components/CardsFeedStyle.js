@@ -77,3 +77,20 @@ padding: 0.5em;
     background-color: #e0dcdc;
 }
 `
+
+export const ContainerFirst = styled.div`
+display: flex;
+align-items: center;
+justify-content: center;
+height: 90vh;
+button{
+    font-size: 1em;
+    background-color: white;
+    border: 1px solid black;
+    border-radius: 5px;
+    padding: 0.5em;
+}
+button:hover{
+    background-color: #e0dcdc;
+}
+`

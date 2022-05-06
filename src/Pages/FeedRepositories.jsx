@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import axios from "axios";
 import { CardsFeed } from "../Components/CardsFeed";
+import { ContainerFirst } from "../Components/CardsFeedStyle";
 
 const api = {
     baseUrl:'https://api.github.com/',
@@ -47,7 +48,7 @@ function FeedRepositories(){
             {(() => {
                 switch(screen) {
                     case 1:
-                        return <button onClick={onClickInicial}>carregar</button>
+                        return <ContainerFirst><button onClick={onClickInicial}>carregar</button></ContainerFirst>
                     case 2: 
                         return <CardsFeed/>   
                     default:
